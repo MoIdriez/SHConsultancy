@@ -1,0 +1,28 @@
+﻿@model SHConsultancy.Models.HeaderViewModel
+<!-- ==========================
+        HEADER - START
+    =========================== -->
+<header class="navbar @(Model.IsDefault ? "navbar-default" : "navbar-transparent") @(Model.IsFixed ? "navbar-fixed-top" : "navbar-static-top") ">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand"><img src="~/images/logo.png" alt=""></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav navbar-main-menu">
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("Index", "Services")">Services</a></li>
+                <li><a href="@Url.Action("Index", "Courses")">Courses</a></li>
+                <li><a href="@Url.Action("Index", "Admissions")">Admissions</a></li>
+                <li><a href="@Url.Action("Index", "Applications")">Applications</a></li>
+                <li><a href="@Url.Action("Index", "News")">News</a></li>
+                <li><a href="@Url.Action("Index", "AboutUs")">About Us</a></li>
+                <li><a href="@Url.Action("Index", "ContactUs")">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- ==========================
+    HEADER - END
+=========================== -->
+
