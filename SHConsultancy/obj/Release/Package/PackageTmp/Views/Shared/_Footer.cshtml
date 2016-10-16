@@ -53,16 +53,17 @@
             <div class="col-md-4 hidden-xs hidden-sm">
                 <h3><i class="fa fa-envelope"></i>Newsletter</h3>
                 <p class="contact-text">News Letter Body1.</p>
-                <form>
+                @using (Html.BeginForm("SendNewsLetterEmail", "Helper", FormMethod.Get)) 
+                {
                     <fieldset>
                         <div class="form-group nospace">
                             <div class="input-group">
-                                <input type="email" class="form-control" id="email" placeholder="Put your email" required>
-                                <span class="input-group-btn"><button class="btn btn-primary" type="button">Submit</button></span>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Put your email" required>
+                                <span class="input-group-btn"><button class="btn btn-primary" type="submit">Submit</button></span>
                             </div>
                         </div>
                     </fieldset>
-                </form>
+                }
             </div>
         </div>
         <div class="footer-bottom">

@@ -152,12 +152,12 @@
     <Compile Include="Controllers\AdmissionsController.cs" />
     <Compile Include="Controllers\ComingSoonController.cs" />
     <Compile Include="Controllers\ContactUsController.cs" />
-    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HelperController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
-    <Compile Include="Controllers\PropertyController.cs" />
+    <Compile Include="Controllers\AccommodationController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -344,14 +344,14 @@
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\AboutUs\Index.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
-    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Education\Index.cshtml" />
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\ContactUs\Index.cshtml" />
-    <Content Include="Views\Property\Index.cshtml" />
+    <Content Include="Views\Accommodation\Index.cshtml" />
+    <Content Include="Views\Admissions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Admissions\" />
     <Folder Include="Views\Applications\" />
     <Folder Include="Views\Helper\" />
   </ItemGroup>

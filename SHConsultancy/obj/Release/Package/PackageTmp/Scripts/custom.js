@@ -351,24 +351,24 @@ $(document).ready(function() {
 	/*------------------------------
 		PARTNER BRANDS
 	------------------------------*/
-	$('#partner_001').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_001.jpg");});
-	$('#partner_001').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_001_bw.jpg");});
-	$('#partner_002').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_002.jpg");});
-	$('#partner_002').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_002_bw.jpg");});
-	$('#partner_003').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_003.jpg");});
-	$('#partner_003').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_003_bw.jpg");});
-	$('#partner_004').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_004.jpg");});
-	$('#partner_004').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_004_bw.jpg");});
-	$('#partner_005').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_005.jpg");});
-	$('#partner_005').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_005_bw.jpg");});
-	$('#partner_006').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_006.jpg");});
-	$('#partner_006').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_006_bw.jpg");});
-	$('#partner_007').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_007.jpg");});
-	$('#partner_007').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_007_bw.jpg");});
-	$('#partner_008').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_008.jpg");});
-	$('#partner_008').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_008_bw.jpg");});
-	$('#partner_009').mouseenter(function() {$(this).attr("src","assets/images/partners/partner_009.jpg");});
-	$('#partner_009').mouseleave(function() {$(this).attr("src","assets/images/partners/partner_009_bw.jpg");});	
+	$('#partner_001').mouseenter(function () { $(this).attr("src", "images/partners/partner_001.jpg"); });
+	$('#partner_001').mouseleave(function () { $(this).attr("src", "images/partners/partner_001_bw.jpg"); });
+	$('#partner_002').mouseenter(function () { $(this).attr("src", "images/partners/partner_002.jpg"); });
+	$('#partner_002').mouseleave(function () { $(this).attr("src", "images/partners/partner_002_bw.jpg"); });
+	$('#partner_003').mouseenter(function () { $(this).attr("src", "images/partners/partner_003.jpg"); });
+	$('#partner_003').mouseleave(function () { $(this).attr("src", "images/partners/partner_003_bw.jpg"); });
+	$('#partner_004').mouseenter(function () { $(this).attr("src", "images/partners/partner_004.jpg"); });
+	$('#partner_004').mouseleave(function () { $(this).attr("src", "images/partners/partner_004_bw.jpg"); });
+	$('#partner_005').mouseenter(function () { $(this).attr("src", "images/partners/partner_005.jpg"); });
+	$('#partner_005').mouseleave(function () { $(this).attr("src", "images/partners/partner_005_bw.jpg"); });
+	$('#partner_006').mouseenter(function () { $(this).attr("src", "images/partners/partner_006.jpg"); });
+	$('#partner_006').mouseleave(function () { $(this).attr("src", "images/partners/partner_006_bw.jpg"); });
+	$('#partner_007').mouseenter(function () { $(this).attr("src", "images/partners/partner_007.jpg"); });
+	$('#partner_007').mouseleave(function () { $(this).attr("src", "images/partners/partner_007_bw.jpg"); });
+	$('#partner_008').mouseenter(function () { $(this).attr("src", "images/partners/partner_008.jpg"); });
+	$('#partner_008').mouseleave(function () { $(this).attr("src", "images/partners/partner_008_bw.jpg"); });
+	$('#partner_009').mouseenter(function () { $(this).attr("src", "images/partners/partner_009.jpg"); });
+	$('#partner_009').mouseleave(function () { $(this).attr("src", "images/partners/partner_009_bw.jpg"); });
 	
 	/*------------------------------
 		COUNTDOWN - EVENT

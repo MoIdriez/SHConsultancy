@@ -1382,7 +1382,7 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 /* JUMBOTRON 6 */
 
 .jumbotron6 #slide-1 {
-	background-image:url(../images/bg2.jpg); 
+	background-image:url(../images/bg4.jpg); 
 	background-position:right -280px;
 }
 
@@ -2765,7 +2765,7 @@ footer .navbar-nav > li > a:hover {
 	line-height:30px;
 }
 
-#about-slider {
+.about-slider {
 	margin-top:61px;
 }
 
@@ -4692,7 +4692,7 @@ form.event-register .form-control {
 }
 
 .jumbotron-full-height #slide-1 {
-	background-image:url(../images/bg2.jpg);
+	background-image:url(../images/bg4.jpg);
 }
 
 .jumbotron-full-height #slide-1 h2 {
@@ -5747,7 +5747,7 @@ form.event-register .form-control {
 		line-height:26px;
 	}
 	
-	#about-slider {
+	.about-slider {
 		margin:40px 0 20px;
 	}
 	

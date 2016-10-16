@@ -30,7 +30,8 @@ namespace SHConsultancy
                 "~/Content/owl.carousel.css",
                 "~/Content/magnific-popup.css",
                 "~/Content/creative-brands.css",
-                "~/Content/custom.css"
+                "~/Content/custom.css",
+                "~/Content/Site.css"
                 ));
         }
     }

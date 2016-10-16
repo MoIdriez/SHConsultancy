@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace SHConsultancy.Controllers
 {
-    public class PropertyController : Controller
+    public class EducationController : Controller
     {
-        // GET: Property
+        // GET: Courses
         public ActionResult Index()
         {
             return View();
