@@ -2,75 +2,107 @@
 @{ ViewBag.Title = "Services"; }
 
 <div id="page-wrapper">
-    @Html.Partial("_Header", new HeaderViewModel {IsDefault = true, IsFixed = false})
+    @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false })
 
     <!-- ==========================
-        FAQ - START
+        SERVICES - START
     =========================== -->
-    <section class="content bg-color-2" id="faq">
+    <section class="content services2" id="services">
         <div class="container">
+            <h2>EDUCATION</h2>
             <div class="row">
-                <div class="col-sm-12">
-                    <h2>Services</h2>
-                    <div class="panel-group" id="accordion">
-                        <!-- FAQ ITEM -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse1">Collapsible Group Item #1</a></h4></div>
-                            <div id="collapse1" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ ITEM -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse2">Collapsible Group Item #2</a></h4></div>
-                            <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ ITEM -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse3">Collapsible Group Item #3</a></h4></div>
-                            <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ ITEM -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse4">Collapsible Group Item #4</a></h4></div>
-                            <div id="collapse4" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ ITEM -->
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><h4 class="panel-title"><a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapse5">Collapsible Group Item #5</a></h4></div>
-                            <div id="collapse5" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @Section("admissions", "Admissions Guidance", "fa-compass")
+                @Section("travel", "Travel advice, flight booking and airport pickup", "fa-taxi")
+                @Section("financial", "Financial Aid", "fa-credit-card")
+                @Section("tutoring", "Tutoring", "fa-comments") 
+                @Section("career", "Career Counselling", "fa-calculator")
+                @Section("translation", "Translation Services", "fa-check-circle-o")
+                @Section("scholarship", "Scholarship assistance", "fa-university")
+                @Section("visa", "Student Visa Advice", "fa-graduation-cap")
             </div>
         </div>
     </section>
     <!-- ==========================
-        FAQ - END
+        SERVICES - END
     =========================== -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Education</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="@("window.location.href='" + @Url.Action("Index", "ContactUs") + "'");">Contact Us</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
+
+    <div id="admissions" class="hidden">
+        <p>In order to assist with your application process, we are here to highlight the tasks that you need to complete prior to submitting your documents. Whether you need references, personal statement, interview preparation and C.V writing - we are here to support you throughout your application. Student admissions and university registration can be difficult for international students. We will help you save energy and time by supporting you through the application process up until you start your new course. Find out more about some of our selected Universities or extend our list with your own choice. If you are interested in learning more regarding our Admissions Guidance, please contact us for a free consultation today.</p>
+    </div>
+
+    <div id="travel" class="hidden">
+        <p>We can provide you with options to help manage you and your luggage upon arrival to your new destination. We help you book flights in advance, in order to ensure ideal departure dates, routes and discounts.  Upon arrival to the United Kingdom, we will have a personalised airport pick up and transfer service to meet your requirements. If you are interested in learning more regarding our Travel Assistance, please contact us for a free consultation today.  </p>
+    </div>
+
+    <div id="financial" class="hidden">
+        <p>If you require any help setting up a student bank account within the UK, our experts are on hand to advise you on essential information such as documents required and how to transfer money to and from your home country. If you are interested in learning more regarding our Financial Aid, please contact us for a free consultation today. </p>
+    </div>
+
+    <div id="tutoring" class="hidden">
+        <p>Our experts work with the aim of helping people find great tutors within the local area, they are fully equipped with the tools needed to provide you with tutors to aid all levels from GCSE, A-level to University and beyond. Our tutoring experts have a comprehensive knowledge of the UK private education system as well as UK Universities; our dedicated team will introduce you to professionals who offer highly effective tutoring programs that focus on academic and language improvements. These individuals can help proofread your papers and mentor you all the way through your academic life. For international students, our tutors can help you obtain a high level of English proficiency. If you are interested in learning more regarding our Tutoring, please contact us for a free consultation today</p>
+    </div>
+
+    <div id="career" class="hidden">
+        <p>We are available to have sessions with you, as a prospective student, ensuring you choose the best career path. Discussions over how to build a resume, cover letters, personal statements and interviews can be booked through an appointment. Through our partnerships with recruiters, we are able to assist in you obtaining employment whilst you are in the UK. If you are interested in learning more regarding our career counselling, please contact us for a free consultation today.</p>
+    </div>
+
+    <div id="translation" class="hidden">
+        <p>We offer a fast and cost effective translation service for international students. Our experts specialise in the translation of certificates, transcripts, reference letters and other supporting documents that are required for UK applications. If you are interested in learning more regarding our translation services please contact us for a free consultation today</p>
+    </div>
+
+    <div id="scholarship" class="hidden">
+        <p>We provide complete information regarding bursaries and scholarships for our partnered universities. If you are interested in learning more regarding our Scholarship assistance, please contact us for a free consultation today.</p>
+    </div>
+
+    <div id="visa" class="hidden">
+        <p>At StoneHenge Consultancy, we can help you prepare for life in the UK where we fully support you while you are here. Our experts provide advice on immigration laws and how to live and study within the UK. Depending on which country you are applying from and where the visa application will be processed; our experts will help and give you advice via an easy to follow step by step process.  If you require our help please book an appointment, our experienced team members will help and guide you to follow the UKVI latest visa application procedures. </p>
+    </div>
 
     @Html.Partial("_Footer")
 </div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(".service").click(function () {
+            var content = $("#" + $(this).attr("data-modal-content-id")).html();
+            var title = $(this).attr("data-modal-content-title");
+
+            $(".modal-title").text(title);
+            $(".modal-body").html(content);
+
+            $('.modal').modal('show');
+        });
+    </script>
+
+}
+
+@helper Section(string id, string title, string fa)
+{
+    <!-- Service -->
+    <div class="col-md-4 col-sm-6">
+        <div class="service" data-modal-content-title="@title" data-modal-content-id="@id" style="cursor: pointer; min-height: 250px;">
+            <i class="fa @fa"></i>
+            <div class="service-body">
+                <h3>@title</h3>
+            </div>
+        </div>
+    </div>
+}

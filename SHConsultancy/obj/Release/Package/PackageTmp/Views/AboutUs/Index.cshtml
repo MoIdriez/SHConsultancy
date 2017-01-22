@@ -1,96 +1,27 @@
 ﻿@using SHConsultancy.Models
 <div id="page-wrapper">
-    @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false})
+    @Html.Partial("_Header", new HeaderViewModel {IsDefault = true, IsFixed = false})
 
     <!-- ==========================
-            ABOUT - START
-        =========================== -->
+    ABOUT - START
+    =========================== -->
     <section class="jumbotron jumbotron2">
         <div class="container">
-            <h2>WELCOME TO StoneHenge Consultancy<small>Modern. Awesome. Simply groovy.</small></h2>
+            <h2>WELCOME TO StoneHenge Consultancy<small>Modern. Awesome. Simply groovy.</small>
+            </h2>
         </div>
     </section>
 
-    <section class="content" id="about-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Who we are</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa. Sed fringilla lobortis odio nec pulvinar. Mauris lacinia lorem eget ante commodo dictum. Aliquam erat volutpat. Sed porta dapibus vestibulum. Aliquam nibh purus, accumsan laoreet velit eget, blandit blandit lorem.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                </div>
-                <div class="col-md-6">
-                    <div id="about-slider" class="owl-carousel owl-theme">
-                        <div class="item"><img src="~/images/portfolio/image_01.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_02.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_03.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_04.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_05.jpg" alt="" class="img-responsive"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @Section("WHO WE ARE:", "Founded in 2001, Stonehenge Consultancy is an organization that provides students with support for academic placement, living arrangements and involvement with local charities. Through establishing a relationship with us, we will ensure to cater to your needs by reviewing your budgetary options, interests and goals beyond the scope of your imagination. Our team consists of highly-skilled individuals who value client-customer relationships from across the world, through effective and personalized consultations.", "/images/showcase1.png")
+    @Section("WHY CHOOSE US: ", "Stonehenge Consultancy is an established and reputable organisation providing vital assistance to local and international clients. Since 2001, we have been consulting students with educational all around the GCC, Middle-East and worldwide. Our partnerships with different universities and colleges throughout the UK, allows for our education counsellors and private mentors to provide expert advice and information on the best universities, other educational institutions and academic services that will suit a client’s requirements. The diverse collection of skills and experiences (e.g. languages, cultural understanding) allows our team to provide outstanding service to students on a global scale. We understand that every student is unique; therefore, we provide realistic application guidance based on their qualifications, level of English - language proficiency and desire to attend a top University/ College.", "/images/showcase1.png", true) 
+    @Section("WHAT MAKES US UNIQUE:", "What makes us unique stems from our guiding principles that drive our operational approach to our client’s needs. Our principles and values have enabled us to achieve the highest level of customer service and satisfaction.  Our vision and goal is to provide international education and professional training ensuring the UK standards are met. We aim to contribute to society by providing new means of education, learning and research through technological advancements.  Through our partnerships with various companies and institutions around the world, we aim to ensure that the highest level of education and support. Since knowledge and culture are not static, we also have a continuing commitment to the testing and evaluation of new ideas and innovative methods of teaching and learning.", "/images/showcase1.png")
 
-    <section class="content bg-color-2" id="about-team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="row">
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/17/10/the-rock-fat.jpg" class="img-responsive center-block" alt="">
-                        <h3>The Rock<small>Security</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://scontent-lhr3-1.xx.fbcdn.net/t31.0-8/14324629_964082123715157_134696099952977150_o.jpg" class="img-responsive center-block" alt="">
-                        <h3>Mo Idries<small>Amazon King</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/540296_10151141251084534_1597641511_n.jpg?oh=e968f7ad64ef5bc1ae47421ccc557561&oe=586C95A9" class="img-responsive center-block" alt="">
-                        <h3>Amar<small>Just hangs out here</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     <!-- ==========================
-        ABOUT - END
-    =========================== -->
-    <!-- ==========================
-        SEPARATOR - START
+    SEPARATOR - START
     =========================== -->
     <section class="content content-separator text-center" id="separator1">
         <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat<a href="contact1.html" class="btn btn-lg btn-inverse">Contact Us</a></p>
+            <p>Let US do the hard work for YOU! - So don’t wait <b><a style="color:white !important" href="@Url.Action("Index", "ContactUs")">Contact Us</a></b> for additional information and advice.</p>
         </div>
     </section>
     <!-- ==========================
@@ -99,3 +30,34 @@
 
     @Html.Partial("_Footer")
 </div>
+
+@helper Section(string title, string body, string imageUrl, bool alternate = false)
+{
+    <section class="content bg-color-2" style="@(alternate ? "background-color: white;" : "")">
+        <div class="container">
+            <div class="row">
+                @if (alternate)
+                {
+                    <div class="col-md-6">
+                        <img src="@imageUrl" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>@title</h2>
+                        <p>@body</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-6">
+                        <h2>@title</h2>
+                        <p>@body</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="@imageUrl" alt="" class="img-responsive">
+                    </div>
+                    
+                }
+            </div>
+        </div>
+    </section>
+}

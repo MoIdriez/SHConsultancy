@@ -2,8 +2,8 @@
     margin-top: 20px;
 }
 
-.content.custom-seperator {
-    background-image: url(../images/bg3.jpg);
+.content.custom-seperator2 {
+    background-image: url(../images/bg12.jpg);
     min-height: 150px;
     width: 100%;
     background-position: 50% 0;
@@ -12,3 +12,29 @@
     -ms-background-size: cover;
     background-size: cover;
 }
+
+.content.custom-seperator {
+    background-image: url(../images/bg11.jpg);
+    min-height: 150px;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.content.seperator-education {
+    background-image: url(../images/bg3.jpg);
+}
+
+.content.seperator-services {
+    background-image: url(../images/bg3.jpg);
+}
+
+.content.seperator-aboutus {
+    background-image: url(../images/bg9.jpg);
+}
+
+.education .service { min-height: 225px;}
+.studentservices .service { min-height: 245px;}

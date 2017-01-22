@@ -1,151 +1,74 @@
 ﻿@using SHConsultancy.Models
 <div id="page-wrapper">
-    @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false})
+    @Html.Partial("_Header", new HeaderViewModel {IsDefault = true, IsFixed = false})
 
     <!-- ==========================
-            ABOUT - START
-        =========================== -->
+    ABOUT - START
+    =========================== -->
     <section class="jumbotron jumbotron2">
         <div class="container">
-            <h2>WELCOME TO StoneHenge Consultancy<small>Modern. Awesome. Simply groovy.</small></h2>
+            <h2>WELCOME TO StoneHenge<sup>Qa</sup> Consultancy
+            </h2>
         </div>
     </section>
 
-    <section class="content" id="about-content">
+    <section class="content" id="section-introduction">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Who we are</h3>
-                    <p>SH Consultation is an organization willing to provide you with support for academic placement, living arrangements and involvement with local charities. Through establishing a relationship with us, we will ensure to cater to your needs by reviewing your budgetary options, interests and goals beyond the scope of your imagination.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-slider owl-carousel owl-theme">
-                        <div class="item"><img src="~/images/portfolio/image_01.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item"><img src="~/images/portfolio/image_02.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item"><img src="~/images/portfolio/image_03.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item"><img src="~/images/portfolio/image_04.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item"><img src="~/images/portfolio/image_05.jpg" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-slider owl-carousel owl-theme">
-                        <div class="item">
-                            <img src="~/images/portfolio/image_01.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img src="~/images/portfolio/image_02.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img src="~/images/portfolio/image_03.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img src="~/images/portfolio/image_04.jpg" alt="" class="img-responsive">
-                        </div>
-                        <div class="item">
-                            <img src="~/images/portfolio/image_05.jpg" alt="" class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h3>WHY CHOOSE US</h3>
-                    <p>Stonehenge Consultancy is an established and reputable organisation providing vital assistance to international clients. Since 2001, we have contributed educational advice to students all around the GCC and Middle-East. Our partnerships include different universities and colleges throughout the UK, allowing for our education counsellors and private mentors with information on the best universities, other educational institutions and academic services to suit a potential student’s requirements.</p>
-                    <p>We are a team of experts in our respective fields, from studying abroad, industry-based , travel experts and accommodation experts. The diverse collection of skills and experiences (e.g. languages, cultural understanding) allows our team to provide outstanding service to students on a global basis.</p>
-                    <p>We understand that every student is unique. Therefore, we provide realistic application guidance based on their qualifications, level of English-language proficiency and desire to attend a top University/College.</p>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>WHAT MAKES US UNIQUE</h3>
-                    <p>At Stonehenge Consultancy, what makes us unique stems from our guiding principles, that drive our operational approach to our clients needs. We cater our principles and values based on a foundation of principles which guide us in our services. Our experts take the time to understand your needs and requirements, as we offer personalized counselling and advice, right at the comfort of your own.</p>
-                    <p>We are committed to providing the best services to our clients - whether students or educational institutions, by utilizing our resources efficiently. What sets us apart from the competitors is the way we work in understanding our clients and working together to get the right outcome.</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-slider owl-carousel owl-theme">
-                        <div class="item"><img src="~/images/portfolio/image_01.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_02.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_03.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_04.jpg" alt="" class="img-responsive"></div>
-                        <div class="item"><img src="~/images/portfolio/image_05.jpg" alt="" class="img-responsive"></div>
-                    </div>
-                </div>
-            </div>
+            <h2>Who We Are?</h2>
+            <p>StoneHenge Qa is a U.K. based, international consultancy that specialises in education, training, development and management. The company is a customer centric organisation that values client-customer relationships from across the world. Through effective and bespoke consultations, WE will HELP you achieve your goals. We have empowered students to success all around the GCC region and the rest of the world.</p>
+            <p>Our partnerships with different universities and colleges both domestic and international, allows  our consultants and private mentors to provide expert advice and information on the best universities, corporate programs and academic services that will suit a client’s  needs. The diverse collection of skills and experiences enables our team to provide outstanding service to students on a global scale.</p>
         </div>
     </section>
-
-    <section class="content bg-color-2" id="about-team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="row">
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/03/17/10/the-rock-fat.jpg" class="img-responsive center-block" alt="">
-                        <h3>The Rock<small>Security</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://scontent-lhr3-1.xx.fbcdn.net/t31.0-8/14324629_964082123715157_134696099952977150_o.jpg" class="img-responsive center-block" alt="">
-                        <h3>Mo Idries<small>Amazon King</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Profile -->
-                <div class="col-xs-4">
-                    <div class="profile">
-                        <img src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/540296_10151141251084534_1597641511_n.jpg?oh=e968f7ad64ef5bc1ae47421ccc557561&oe=586C95A9" class="img-responsive center-block" alt="">
-                        <h3>Amar<small>Just hangs out here</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vulputate tristique congue. Nulla sed nulla pharetra, elementum odio sit amet, mollis felis. Aliquam non laoreet arcu, sed congue massa.</p>
-                        <ul class="brands brands-sm brands-circle brands-inline main">
-                            <li><a href="" class="brands-facebook"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="" class="brands-twitter"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="" class="brands-google-plus"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
+    <section class="content custom-seperator seperator-aboutus"></section>
+        <section class="content" id="section-introduction">
+            <div class="container">
+                <h2>Why Choose us?</h2>
+                <p><b>Expert</b></p>
+                <p>Our consultants have a wealth of experience and expertise in the education and training sector. We provide bespoke direction to help YOU plan your training and academic studies.</p>
+                <p>
+                    <b>Trust</b>
+                </p>
+                <p>Our consultants are trustworthy, transparent, honest and fully dedicated to your needs.</p>
+                <p><b>Quality</b></p>
+                <p>Customers will receive a personalised service from our dedicated team of consultants who will always provide high quality support throughout the process</p>
+                <p><b>Experience</b></p>
+                <p>Our team consists of experienced professionals who are experts in their respective fields. This enables them to provide high quality, professional advice to our clients and students.</p>
+                <p><b>Local</b></p>
+                <p>Our consultants are available when YOU need them. We accommodate for different time zones, cultures, languages so that we can develop an action plan that works best for YOU.</p>
             </div>
-        </div>
-    </section>
-    <!-- ==========================
-        ABOUT - END
-    =========================== -->
-    <!-- ==========================
+        </section>
+    <section class="content custom-seperator seperator-aboutus"></section>
+        <section class="content" id="section-introduction">
+            <div class="container">
+                <h2>What makes us Unique?</h2>
+                <p><b>Purpose</b></p>
+                <p>We aim to empower and guide students and corporate clients to be future collaborators of VALUE for business and society as a whole.</p>
+                <p>
+                    <b>Method</b>
+                </p>
+                <p>We generate and create models, materials, systems and an environment that develops effective learning capabilities for future leadership</p>
+                <p><b>Partnership</b></p>
+                <p>
+                    We aim to expand our partnerships on a global scale to accommodate and grow our knowledge so that we can give back to the community whilst operating responsibly. Through partnerships, we develop effective processes that can withstand the constant challenges in our environment.
+                </p>
+                <p><b>Communication</b></p>
+                <p>We will encourage and support communication and debates with students, businesses, government, customers, media, educational institutes and all other interested parties on important issues related to social responsibility and sustainable business.</p>
+                <p><b>Results</b></p>
+                <p>We take pride in the reputation of our brand and are happy that our customers highly recommend our services and products. Customer satisfaction and trust is our core principles that have enabled us to achieve great success.</p>
+                <br /><p>Since knowledge and culture are not static, we also have a continuing commitment to the testing and evaluation of new ideas and innovative methods of teaching and learning.</p>
+            </div>
+        </section>
+        <!-- ==========================
         SEPARATOR - START
-    =========================== -->
-    <section class="content content-separator text-center" id="separator1">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat<a href="contact1.html" class="btn btn-lg btn-inverse">Contact Us</a></p>
-        </div>
-    </section>
-    <!-- ==========================
-    SEPARATOR - END
-    =========================== -->
+        =========================== -->
+        <section class="content content-separator text-center" id="separator1">
+            <div class="container">
+                <p>Let US do the hard work for YOU! - So don’t wait <b><a style="color:white !important" href="@Url.Action("Index", "ContactUs")">Contact Us</a></b> for additional information and advice.</p>
+            </div>
+        </section>
+        <!-- ==========================
+        SEPARATOR - END
+        =========================== -->
 
-    @Html.Partial("_Footer")
+        @Html.Partial("_Footer")
 </div>

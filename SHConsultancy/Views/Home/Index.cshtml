@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div>
-                                <h2 class="animation top-to-bottom delay-1">EDUCATION</h2>
+                                <h2 class="animation top-to-bottom delay-1">Education</h2>
                             </div>
                             <div>
                                 <h3 class="animation bottom-to-top delay-2">Discover University Programs</h3>
@@ -48,9 +48,9 @@
                                 <h2 class="animation top-to-bottom delay-1">Student Services</h2>
                             </div>
                             <div>
-                                <h3 class="animation bottom-to-top delay-2">Admissions Guidance</h3>
-                                <h3 class="animation bottom-to-top delay-2">Tutoring</h3>
-                                <h3 class="animation bottom-to-top delay-2">Travel Assistance</h3>
+                                <h3 class="animation bottom-to-top delay-2">Admissions Guidance</h3> <br />
+                                <h3 class="animation bottom-to-top delay-2">Tutoring</h3><br />
+                                <h3 class="animation bottom-to-top delay-2">Travel Assistance</h3><br />
                                 <h3 class="animation bottom-to-top delay-2">Translation Services</h3>
                             </div>
                         </div>
@@ -62,71 +62,67 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div><h2 class="animation top-to-bottom delay-1">Accommodation </h2></div>
-                            <div><h3 class="animation bottom-to-top delay-2">Find your ideal accommodation</h3></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item" id="slide-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div><h2 class="animation top-to-bottom delay-1">CHARITY</h2></div>
                             <div>
-                                <h3 class="animation bottom-to-top delay-2">Give back to your community</h3>
-                                <h3 class="animation bottom-to-top delay-2">Helping the youth</h3>
+                                <h2 class="animation top-to-bottom delay-1">Accommodation </h2>
+                            </div>
+                            <div>
+                                <h3 class="animation bottom-to-top delay-2">Home Sweet Home</h3><br />
+                                <h3 class="animation bottom-to-top delay-2">Find your ideal accommodation</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- ==========================
-        JUMBOTRON - END
-    =========================== -->
+            JUMBOTRON - END
+        =========================== -->
     <!-- ==========================
         SERVICES - START
     =========================== -->
     <section class="content bg-color-2 services3" id="services">
         <div class="container">
-            <h2 class="text-center">OUR SERVICES:</h2>
+            <h2 class="text-center">OUR SERVICES</h2>
             <div class="row">
 
                 <!-- Service -->
                 <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-pencil"></i>
-                        <div class="service-body">
-                            <h3>Education </h3>
-                            <p>It's time to find the perfect academic program for you.</p>
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="service">
+                            <i class="fa fa-pencil"></i>
+                            <div class="service-body">
+                                <h3>Education </h3>
+                                <p>It's time to find the perfect academic program for you.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service -->
                 <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-graduation-cap"></i>
-                        <div class="service-body">
-                            <h3>Student Services </h3>
-                            <p>We provide tailored services that help meet each individual needs.</p>
+                    <a href="@Url.Action("Index", "Services")">
+                        <div class="service">
+                            <i class="fa fa-graduation-cap"></i>
+                            <div class="service-body">
+                                <h3>Student Services </h3>
+                                <p>We provide tailored services that help meet each individual needs.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service -->
                 <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-home"></i>
-                        <div class="service-body">
-                            <h3>Accommodation </h3>
-                            <p>Allow us to help you with your living arrangements.</p>
+                    <a href="@Url.Action("Index", "Accommodation")">
+                        <div class="service">
+                            <i class="fa fa-home"></i>
+                            <div class="service-body">
+                                <h3>Accommodation </h3>
+                                <p>Allow us to help you with your living arrangements.</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -135,11 +131,21 @@
         SERVICES - END
     =========================== -->
     <!-- ==========================
-        SEPARATOR - START
+    SEPARATOR - START
     =========================== -->
-    <section class="content content-separator">
+    <section class="content custom-seperator">
         <div class="container">
-            <p class="text-lg text-center"><b>ABOUT US</b> - Founded in 2001, Stonehenge Consultancy<sup>Qa</sup> is a reputable organisation providing assistance to students, potential home-owners and charities. Our team consists of highly-skilled individuals who value client-customer relationships from across the world, through effective and personalized consultation. <b><a style="color:white !important" href="@Url.Action("Index","AboutUs")">Read More</a></b></p>
+            <p style="color: white" class="text-lg text-center "><b>Stonehenge<sup>Qa</sup></b> is a U.K. based, international consultancy that specialises in education, training,
+
+            development and management. The company is a customer centric organisation that values client-
+
+            customer relationships from across the world. Through effective and bespoke consultations, WE will
+
+            HELP you achieve your goals. We have empowered students to success all around the GCC region
+
+            and the rest of the world. <b><a style="color: white !important" href="@Url.Action("Index", "AboutUs")">Read More</a></b>
+            </p>
+            
         </div>
     </section>
     <!-- ==========================
@@ -150,48 +156,93 @@
     =========================== -->
     <section class="content bg-color-2 services3" id="services">
         <div class="container">
-            <h2 class="text-center">Education :</h2>
-            <h3>Let us help you find the right course to start your journey</h3>
-            <h3>Learn Today, Lead Tomorrow</h3>
+            <h2 class="text-center">Education</h2>
+            <h3 class="text-center">Let us help you find the right course to start your journey</h3>
+            <h3 class="text-center">Learn Today, Lead Tomorrow</h3>
+            <br/>
             <div class="row">
                 <!-- Service -->
-                <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-star-o"></i> <!-- fa-users / fa-star-o -->
-                        <div class="service-body">
-                            <h3>Pre-University</h3>
-                            <p>GCSE</p>
-                            <p>A-Level</p>
-                            <p>IELTS/ Free English Courses</p>
+                <div class="col-sm-3">
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="service service-extra">
+                            <i class="fa fa-book"></i> <!-- fa-users / fa-star-o -->
+                            <div class="service-body">
+                                <h3>Pre-University</h3>
+                                <p>Let us help you find the right pre-university course</p>
+                                <br/>
+                                <p>
+                                    <ul>
+                                        <li style="text-align: left !important">Apprenticeships</li>
+                                        <li style="text-align: left !important">GCSE</li>
+                                        <li style="text-align: left !important">A-Level</li>
+                                        <li style="text-align: left !important">IELTS/ Free English Courses</li>
+                                    </ul>
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service -->
-                <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-star-half-empty"></i> <!-- pie-chart / fa-star-half-empty -->
-                        <div class="service-body">
-                            <h3>Undergraduate programs</h3>
-                            <p>Let us help you find the right pathway for your undergraduate degree.</p>
-                            <p>Foundation Programmes.</p>
-                            <p>One Year Degree programmes.</p>
-                            <p>Bachelor’s Degree Programmes.</p>
+                <div class="col-sm-3">
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="service service-extra">
+                            <i class="fa fa-university"></i> <!-- pie-chart / fa-star-half-empty -->
+                            <div class="service-body">
+                                <h3>Undergraduate programs</h3>
+                                <p>Let us help you find the right pathway for your undergraduate degree.</p>
+                                <br />
+                                <p>
+                                    <ul>
+                                        <li style="text-align: left !important">Foundation Programmes</li>
+                                        <li style="text-align: left !important">One Year Degree programmes</li>
+                                        <li style="text-align: left !important">Bachelor’s Degree Programmes</li>
+                                    </ul>
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Service -->
-                <div class="col-sm-4">
-                    <div class="service">
-                        <i class="fa fa-star"></i><!-- black-tie fa-star -->
-                        <div class="service-body">
-                            <h3>Postgraduate programs</h3>
-                            <p>Find the right postgraduate course for you from a wide range of degrees including part time study options and online study.</p>
-                            <p>Pre-Masters</p>
-                            <p>Masters</p>
+                <div class="col-sm-3">
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="service service-extra">
+                            <i class="fa fa-briefcase"></i><!-- black-tie fa-star -->
+                            <div class="service-body">
+                                <h3>Postgraduate programs</h3>
+                                <p>Find the right postgraduate course for you from a wide range of degrees including part time study options and online study.</p>
+                                <br/>
+                                <p>
+                                    <ul>
+                                        <li style="text-align: left !important">Pre-Masters</li>
+                                        <li style="text-align: left !important">Masters</li>
+                                    </ul>
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
+
+                <!-- Service -->
+                <div class="col-sm-3">
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="service service-extra">
+                            <i class="fa fa-child"></i><!-- black-tie fa-star -->
+                            <div class="service-body">
+                                <h3>Corporate Training</h3>
+                                <p>We offer specialised corporate training programs that are delivered either online or within your facility</p>
+                                <br/>
+                                <p>
+                                    <ul>
+                                        <li style="text-align: left !important">Professional diplomas</li>
+                                        <li style="text-align: left !important">Accredited certificates</li>
+                                        <li style="text-align: left !important">Tailor made programmes</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -202,126 +253,135 @@
     <!-- ==========================
         STATISTICS - END
     =========================== -->
-    <section class="content content-separator" id="section-statistics">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="number">63000000</div>
-                        <div class="title">Population</div>
-                    </div>
+<section class="content content-separator" id="section-statistics">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="number">63000000</div>
+                    <div class="title">Population</div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="number">2600000</div>
-                        <div class="title">Students</div>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="number">2600000</div>
+                    <div class="title">Students</div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="number">420000</div>
-                        <div class="title">Int Students</div>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="number">420000</div>
+                    <div class="title">Int Students</div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="number">145</div>
-                        <div class="title">Listed Institutes</div>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="number">145</div>
+                    <div class="title">Listed Institutes</div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="number">88</div>
-                        <div class="title">Ranked Universities</div>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="number">88</div>
+                    <div class="title">Ranked Universities</div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="statistic">
-                        <div class="title">September-May</div>
-                        <div class="title">Academic Year</div>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-md-2">
+                <div class="statistic">
+                    <div class="title">September-May</div>
+                    <div class="title">Academic Year</div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ==========================
-    STATISTICS - END
-    =========================== -->
-    <!-- ==========================
-            SUPPORT - START
-        =========================== -->
-    <section class="content bg-color-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Our Support</h2>
-                    <p>Our experts can help you through your time in the UK with a wide range of student support services to guide you through the process</p>
-                    <ul>
-                        <li><p>Admission Guidance</p></li>
-                        <li><p>Travel Assistance</p></li>
-                        <li><p>Tutoring</p></li>
-                        <li><p>Translation Services</p></li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <img src="~/images/showcase1.png" alt="" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========================
-     SUPPORT - END
-    =========================== -->
-<section class="content custom-seperator"></section>
+    </div>
+</section>
 
-    <!-- ==========================
-            ABOUT US - START
-        =========================== -->
-    <section class="content bg-color-2">
+<section class="content bg-color-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <h2>Student Support</h2>
+                    <h4>Our Student Support Service experts are available to assist students with a wide-range of issues and concerns that might arise during the application process and your time at university</h4>
+                    <br/>
+                    <a href="@Url.Action("Index", "Services")" class="btn btn-info" role="button">Our Support</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="~/images/bg12.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <section class="content custom-seperator"></section>
+    <section class="content bg-color-2 services3" id="services">
         <div class="container">
+            <h2 class="text-center">Accommodation</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <img src="~/images/showcase1.png" alt="" class="img-responsive">
-                </div>
-                <div class="col-md-6">
-                    <h2>Accommodation </h2>
-                    <p>We are able to help you find a range accommodation options across the UK</p>
-                    <ul>
-                        <li><p>Halls of Residence</p></li>
-                        <li><p>Apartments & House Share</p></li>
-                        <li><p>Home Stay</p></li>
-                        <li><p>Become a Host</p></li>
-                        <li><p>Commercial</p></li>
-                        <li><p>Investment</p></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========================
-    ABOUT US - END
-    =========================== -->
 
-<!-- ==========================
-            PARTNERS - START
-        =========================== -->
-    <section class="content" id="section-partners">
-        <div class="container">
-            <h2 class="text-center">Clients</h2>
-            <p class="secondary-headline text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec lorem quis est ultrices volutpat.</p>
-            <div id="partners-slider">
-                <div class="item"><a href="#"><img src="~/images/partners/partner_001_bw.jpg" alt="" id="partner_001"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_002_bw.jpg" alt="" id="partner_002"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_003_bw.jpg" alt="" id="partner_003"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_004_bw.jpg" alt="" id="partner_004"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_005_bw.jpg" alt="" id="partner_005"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_006_bw.jpg" alt="" id="partner_006"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_007_bw.jpg" alt="" id="partner_007"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_008_bw.jpg" alt="" id="partner_008"></a></div>
-                <div class="item"><a href="#"><img src="~/images/partners/partner_009_bw.jpg" alt="" id="partner_009"></a></div>
+                <!-- Service -->
+                <div class="col-sm-4">
+                    <a href="@Url.Action("Index", "Accommodation")">
+                        <div class="service service-extra2">
+                            <i class="fa fa-home"></i>
+                            <div class="service-body">
+                                <h3>Home Stay </h3>
+                                <p>We aim to provide a suitable match between international students and host families in the UK.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Service -->
+                <div class="col-sm-4">
+                    <a href="@Url.Action("Index", "Accommodation")">
+                        <div class="service service-extra2">
+                            <i class="fa fa-building"></i>
+                            <div class="service-body">
+                                <h3>Halls of Residence </h3>
+                                <p>Our Accommodation team are here to help you find suitable halls of residence to live in.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Service -->
+                <div class="col-sm-4">
+                    <a href="@Url.Action("Index", "Accommodation")">
+                        <div class="service service-extra2">
+                            <i class="fa fa-users"></i>
+                            <div class="service-body">
+                                <h3>Apartments and house share</h3>
+                                <p>We also aim to provide tailored and private accommodation.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+<section class="content" id="section-partners">
+    <div class="container">
+        <h2 class="text-center">Partners, Associates and Satellite centres</h2>
+        <div id="partners-slider">
+            <div class="item"><a href="#"><img src="~/images/partners/partner_001.jpg" alt="" id="partner_001"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_002.jpg" alt="" id="partner_002"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_003.jpg" alt="" id="partner_003"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_004.jpg" alt="" id="partner_004"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_005.jpg" alt="" id="partner_005"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_006.jpg" alt="" id="partner_006"></a>
+            </div>
+            <div class="item"><a href="#"><img src="~/images/partners/partner_007.jpg" alt="" id="partner_007"></a>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- ==========================
         PARTNERS - END
     =========================== -->
@@ -331,6 +391,33 @@
     <section class="content" id="contact">
         <div class="container">
             <div class="row">
+
+                <div class="col-sm-6">
+                    <h2>Our Address</h2>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> StoneHenge<sup>Qa</sup> Consultancy</p>
+                    <p>20-22 Wenlock Road</p>
+                    <p>Islington</p>
+                    <p>London</p>
+                    <p>N1 7GU</p>
+                    <br/>
+                    <p><i class="fa fa-globe" aria-hidden="true"></i> <a href="www.http://shqa.co.uk/">http://shqa.co.uk/</a></p>
+                    <br/>
+
+
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+447798800896">+44 (0) 7798800896</a></p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+447827459738">+44 (0) 7827459738</a></p>
+                    
+
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@shqa.co.uk">info@shqa.co.uk</a></p>
+                    <ul class="brands brands-md brands-inline brands-transition brands-circle main">
+                        <li><a href="https://www.facebook.com/stonehenge.consultancy.3?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/SHConsultancy1"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/stonehenge-consultancy-203876129?trk=hp-identity-name"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/107129165853564950522"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCkt09BfMVgY8ZF_bLA3PAng"><i class="fa fa-youtube"></i></a></li>
+                        
+                    </ul>
+                </div>
                 <div class="col-sm-6">
                     <h2>Contact US</h2>
                     <div class="contact-alert-wrapper"></div>
@@ -373,20 +460,6 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="col-sm-6">
-                    <h2>Contact</h2>
-                    <ul class="list-unstyled contact-address">
-                        <li>+44 779 8800896</li>
-                        <li><a href="mailto:info@shconsultancy.org.uk" target="_top">info@shconsultancy.org.uk</a></li>
-                        <li>20-22 Wenlock Road, Islington, London N1 7GU</li>
-                    </ul>
-                    <ul class="brands brands-md brands-inline brands-transition brands-circle main">
-                        <li><a href="https://www.facebook.com/stonehenge.consultancy.3?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/stonehenge-consultancy-203876129?trk=hp-identity-name"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://plus.google.com/u/0/107129165853564950522"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCkt09BfMVgY8ZF_bLA3PAng"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </section>
@@ -394,5 +467,7 @@
         CONTACT - END
     =========================== -->
     @Html.Partial("_Footer")
+
+
 
 </div>

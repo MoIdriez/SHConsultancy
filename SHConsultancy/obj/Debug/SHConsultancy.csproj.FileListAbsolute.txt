@@ -51,3 +51,13 @@ c:\users\midries\documents\visual studio 2015\Projects\SHConsultancy\SHConsultan
 c:\users\midries\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\obj\Debug\SHConsultancy.csprojResolveAssemblyReference.cache
 c:\users\midries\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\obj\Debug\SHConsultancy.dll
 c:\users\midries\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\obj\Debug\SHConsultancy.pdb
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_001.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_001_bw.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_002.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_002_bw.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_003.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_003_bw.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_004.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_004_bw.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_005.jpg
+C:\Users\MIDRIES\documents\visual studio 2015\Projects\SHConsultancy\SHConsultancy\bin\images\partners\partner_005_bw.jpg

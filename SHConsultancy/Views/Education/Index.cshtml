@@ -1,13 +1,57 @@
 ﻿@using SHConsultancy.Models
 @{ ViewBag.Title = "Courses"; }
 
-<div id="page-wrapper">
+<div id="page-wrapper" class="education">
     @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false })
 
+    <section class="jumbotron jumbotron5 education">
+        <div class="container"></div>
+    </section>
+    <section class="content" id="section-introduction">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Education is the key to a successful future. Here at StoneHenge QA we aim to provide you with the advice you need to ensure that you select the course that’s right for you.</p>
+            <p>Our access courses are aimed at students who did not meet the requirements to enter college or university, with a brief free consultation with one of our experts we can help you get back on the right track.</p>
+        </div>
+    </section>
+    
+    <section class="content bg-color-2 services3" id="services">
+        <div class="container">
+            <div class="row">
+                @Section("ielts", "IELTS", "fa-sort-alpha-asc")
+                @Section("gcse", "GCSE/IGCSE & A-Levels", "fa-calculator", true)
+                @Section("hnd", "Higher National Diplomas (HNDs)", "fa-hand-paper-o", true)
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="content bg-color-2 services3 custom-seperator seperator-education" id="services" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                @Section("one", "One Year Bachelor’s Degree", "fa-pie-chart")
+                @Section("bachelor", "Bachelor Degree", "fa-graduation-cap")
+                @Section("master", "Master’s Degree", "fa-line-chart")
+            </div>
+        </div>
+    </section>
+
+
+    <section class="content bg-color-2 services3" id="services">
+        <div class="container">
+            <div class="row">
+                @Section("health", "Health and Social Care:", "fa-heartbeat")
+                @Section("hair", "Hair & Beauty Courses", "fa-scissors")
+                @Section("business", "Business Courses & Professional Diplomas", "fa-black-tie", true)
+            </div>
+        </div>
+    </section>
+    
     <!-- ==========================
         SERVICES - START
     =========================== -->
-    <section class="content services2" id="services">
+    @*<section class="content services2" id="services">
         <div class="container">
             <h2>EDUCATION</h2>
             <div class="row">
@@ -22,27 +66,11 @@
                 @Section("master", "Master’s Degree", "fa-line-chart")
             </div>
         </div>
-    </section>
+    </section>*@
     <!-- ==========================
         SERVICES - END
     =========================== -->
-    <div class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Education</h4>
-                </div>
-                <div class="modal-body">
-                    <p>One fine body&hellip;</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    
     <!-- IELTS-->
     <div id="ielts" class="hidden">
         <p>IELTS is a language-proficiency test for higher education, assessing core English skills such as:</p>
@@ -79,60 +107,183 @@
 
     <!-- HAIR -->
     <div id="health" class="hidden">
-        <p>If you are interested in medical or nursing programmes, you can arrange to have a discussion with us about your requirements and what programmes you can apply to</p>
+        <p>If you are interested in a medical or nursing programme, you can arrange to have a discussion with us about your requirements and what programmes you can apply for:</p>
+        <br/>
         <ul>
-            <li><p>NCFE CACHE level 1 diploma in induction to health, social care and children's and young people</p></li>
-            <li><p>NCFE CACHE level 1 Certificate in induction to health, social care and children's and young people</p></li>
-            <li><p>NCFE CACHE level 1 Award in induction to health, social care and children's and young people</p></li>
-            <li><p>NCFE CACHE Level 2 Certificate in Preparing to Work in Adult Social Care</p></li>
-            <li><p>NCFE CACHE Level 3 Certificate in Preparing to Work in Adult Social Care</p></li>
+            <li>
+                <p>NCFE CACHE level 1 diploma in induction to health, social care and children's and young people</p></li>
+            <li>
+                <p>NCFE CACHE level 1 Certificate in induction to health, social care and children's and young people</p></li>
+            <li>
+                <p>NCFE CACHE level 1 Award in induction to health, social care and children's and young people</p></li>
+            <li>
+                <p>NCFE CACHE Level 2 Certificate in Preparing to Work in Adult Social Care</p></li>
+            <li>
+                <p>NCFE CACHE Level 3 Certificate in Preparing to Work in Adult Social Care</p></li>
         </ul>
+        <br/><p>At StoneHenge QA we aim to serve our community and support young students by giving them the ability to start working in the health and social care sector through our apprenticeship programs. </p>
+
     </div>
 
     <!-- HAIR -->
     <div id="hair" class="hidden">
-        <p>If you are interested in pursuing a career in hair, makeup and beauty courses - we have partnered universities/colleges that can make your career goals come to life. Specializing in both beginner and advanced level courses, we can discuss what type of experience you have and where you can fit into your ideal programme. </p>
+        <p>Helping people look, and feel good is a great reason to go to work. Our courses in Hair and Beauty will equip you with essential skills that will offer pathways to various careers such as:</p>
+        <br/>
+        <ul>
+            <li>
+                <p>Stylist</p></li>
+            <li>
+                <p>Beauty Therapist</p></li>
+            <li>
+                <p>Barber</p></li>
+            <li>
+                <p>Technician</p></li>
+            <li>
+                <p>Creative Director</p></li>
+            <li>
+                <p>Salon Manager</p></li>
+            <li>
+                <p>Teacher </p></li>
+        </ul>
+        <br /><p>Our partnered university and colleges provide tailored courses that can make your career goals come to reality.</p>
     </div>
 
     <!-- Business -->
     <div id="business" class="hidden">
-        <p>Access BTEC Level 3 Diploma in Business Administration, discussing your level of work and educational experience, we will guide you through the application process, and assess how you can be a part of a prestigious business programme. </p>
+        <p>Through the business courses provided at our partners, we aim to equip students with an in depth understanding of the operations and structures of businesses and also prepare students with the skills required to succeed in employment or at university.</p>
+        <br/>
+        <ul>
+            <li>
+                <p>Access BTEC Level 3 Diploma in Business Administration</p></li>
+        </ul>
+        <br/> <p>Successful students that complete their programme of study could progress onto a Business related degree or Higher National Diploma.</p>
+        <br/> <p>They will also have the opportunity to go directly into employment in areas such as:</p>
+        <ul>
+            <li>
+                <p>Business Administration</p></li>
+            <li>
+                <p>Business Management</p></li>
+            <li>
+                <p>Administration</p></li>
+        </ul>
+
+        <br /> <p><b>Professional Diplomas</b></p>
+        <br /> <p>Through our partnerships we are able to provide accredited professional diplomas that enable professional development within the workplace. Upon completion of the program, you will be awarded with an international certificate accredited by a recognised UK institute, which is recognised anywhere in the world and give you an edge in the workplace.</p>
+        <br/>
+        <p>This valuable qualification will ultimately lead to a career boost and higher income whether you choose to remain at your current organisation or change jobs or careers.</p>
+        <br /> <p>All professional diplomas are attested from:</p>
+        <ul>
+            <li>
+                <p>U.K. Lawyer</p>
+            </li>
+            <li>
+                <p>Foreign ministry of affairs in the U.K.</p>
+            </li>
+            <li>
+                <p>Any international embassy</p>
+            </li>
+            <li>
+                <p>Foriegn ministry of affairs in your home country</p>
+            </li>
+        </ul>
     </div>
 
     <!-- GCSE/IGCSE & A-Levels -->
     <div id="gcse" class="hidden">
-        <p>Our experts can advise you on different options available to you, where you can complete your GCSE and A- level within the UK, choosing over 10 core subjects over a period of two years. Our specialized team will highlight courses and locations across the UK where a prospective student can complete his or her studies. We will also assign a personal tutor to each student, who will offer counselling and general support services. Whether you wish to make a fulfilling and rewarding career, take your education to the next level or even set up your own business, you will be ready to succeed.</p>
+        <p>GCSE and IGCSE are internationally recognised qualifications highly desirable and highly valued by both the education institutions and employers.</p>
+        <br/><p>IGCSEs are the same qualification level as a standard GCSE and can offer progression to A-Level,
+
+BTEC vocational courses, and other similar qualifications that are recognised internationally and by
+
+the University and Colleges Admissions Service (UCAS).</p>
+        <br /><p>We are able to provide support and guidance with:</p>
+        <br /><ul>
+            <li>
+                <p>School Selection</p></li>
+            <li>
+                <p>Application Processes</p></li>
+            <li>
+                <p>Assessment Preparation</p></li>
+            <li>
+                <p>Visa Application</p></li>
+            <li>
+                <p>Tutoring</p></li>
+        </ul>
+        <p><b>A- Levels</b></p>
+        <br /><p>The General Certificate of Education (GCE) Advanced Level, or A Level, is a secondary school leaving
+
+qualification in the United Kingdom.</p>
+        <br /><p>A-Levels are usually studied over a two-year period and are widely recognised around the world as
+
+the standard qualifications that UK universities use to assess a student’s eligibility for a degree
+
+course.</p>
+        <br /><p>We are able to offer students a variety of courses from internationally recognised institutes, as well
+
+as advice on where to study A-levels in the UK, enabling smooth progression to higher education.</p>
     </div>
 
     <!-- Higher National Diplomas -->
     <div id="hnd" class="hidden">
-        <p>Higher National Diplomas (HNDs) are work-related, vocational or involve higher education qualifications. They are Level-5 qualifications. HNCs and HNDs focus on “learning by doing” and give skills that you can use in any particular industry. They are highly valued by employers and can also count towards membership of professional bodies and other employer organisations. Both qualifications are provided by further and higher education colleges. After completing a HND, the student can then enter any of the universities in the UK and complete a Top-up year to achieve his BA.</p>
+        <p>Higher National Certificates (HNCs) and Higher National Diplomas (HNDs) are work-related, or
+
+vocational, higher education qualifications.</p>
+        <br/><p>These qualifications focus on ‘learning by doing&#39; and give key skills that you can use in a particular
+
+job. They are highly valued by employers and can also contribute towards membership of
+
+professional bodies and other employer organisations.</p>
+        <br/><p>Upon completion, HNCs can enable entry into the second year of a bachelor’s degree, while HNDs
+
+can allow entry into the second or third year of the degree.</p>
+        <br/><p>They can also lead you to straight to a career, as they are designed to give you the skills for a
+
+particular field. You are also able to use the qualifications to progress within your current career to
+
+gain professional status.</p>
     </div>
 
     <!-- One Year Bachelor’s Degree -->
     <div id="one" class="hidden">
-        <p>Transform your career with a Blended degree by ensuring you find the perfect programmes to start off your academic pursuits, we can discuss your options with our partnered universities about what programmes you are eligible for and what steps you need to complete your application. Regardless of your country, English-language proficiency and even interests, we can find the programme best suited to your needs. Our partners are attested worldwide. We can also provide you with the One-Year Programme to complete your BA, through the following courses available:</p>
+        <p><b>‘Think Smart, Study Less’ - from anywhere in the world.</b></p>
+        <br/><p>Transform your career with a Blended degree by ensuring you find the perfect programme to kick start your career. </p>
+        <br/><p>Regardless of your origin and English-language proficiency, we can find the programme best suited to your needs. </p>
+        <br/><p>Our qualifications are accredited and attested worldwide.</p>
+        <br/><p>We provide you with the One-Year Programme to complete your BA, through the following courses available:
+</p>
         <ul>
-            <li><p>BA (Hons) in Marketing (Top-up)</p></li>
-            <li><p>BA (Hons) in Business Management (Top-up)</p></li>
-            <li><p>BA (Hons) in Business Management (Inclusive of Edu. Qual Diploma)</p></li>
-            <li><p>BA (Hons) in Marketing (Inclusive of Edu. Qual. Diploma)</p></li>
+            <li>
+                <p>BA (Hons) in Marketing (Top-up)</p></li>
+            <li>
+                <p>BA (Hons) in Business Management (Top-up)</p></li>
+            <li>
+                <p>BA (Hons) in Business Management (Inclusive of Edu. Qual Diploma)</p></li>
+            <li>
+                <p>BA (Hons) in Marketing (Inclusive of Edu. Qual. Diploma)</p></li>
         </ul>
+        <br /><p>If you’re interested in obtaining a degree in business within one year and start your career early, please contact us for more information. ‘Save Money, Save Time’</p>
     </div>
 
     <!-- Bachelor Degree -->
     <div id="bachelor" class="hidden">
-        <p>Undergraduate degrees in the UK are normally 3 or 4 years in length. 4 year courses usually add 1 year in another country studying languages or in a work placement in industry. A handful of courses which lead to professional qualified status such as Architecture, Dentistry, Medicine and Veterinary Medicine are longer in length. Our experts can help with the administration processes and steps that are needed in order for you to be able to select the university and course of your choice. Let us help you fulfil academic dream.</p>
+        <p>Our partnered universities have an outstanding range of graduate degree programs. They offer a wide range of subjects and with the possibility to combine several topics within your degree, or concentrate on one subject.</p>
+        <br/><p>Our advisors will help assess your academic background, test scores and personal requirements before recommending the university and the programs that will best suit your personal academic interests and career goals.
+</p>
+        <br/><p>Our experts will be there for you from planning and researching right through to applying for programs and preparing for departure to the UK, we provide you with one to one guidance to make the process as easy as possible.
+</p>
     </div>
 
     <!-- Higher National Diplomas -->
     <div id="master" class="hidden">
-        <p>Transform your career with a Blended MBA. Once you have completed your Bachelor’s Degree and have decided to continue your education, we can assist you on your search for your desired Master’s programme. After carefully examining your final grades, career choices and geographical location, we can assess what steps you can take for your next academic destination. Here are the following courses you can potentially be a part of:</p>
+        <p>Upon completion of a bachelor’s degree many students pursue masters and postgraduate study in the UK. The programmes generally last for one year in comparison to two-year masters programmes found elsewhere in the world, saving time, money and launching their career much quicker with a highly valued UK postgraduate degree.</p>
+        <br/><p>For students to be considered, potential applicants should possess a bachelor degree with good grades. However, entry requirements vary between universities, enabling students who do not meet the minimum academic requirements to persue their desired course through a pre-master’s programme.</p>
+        <br/><p>These programmes are intended to prepare students for postgraduate study in the UK; through our partnership we are able to find you the course that best fits you.</p>
+        <br/><p>If you require distance learning then we are able to advise you on how to enrol onto one of our blended learning Master degrees.</p>
+        <br/><p>After carefully examining your final grades, career choices and geographical location, we are able to assist you the following:</p>
         <ul>
-            <li><p>MA in Marketing and Innovation (Top-up)</p></li>
-            <li><p>MBA (Top-up)</p></li>
-            <li><p>MA in Marketing and Innovation (Inclusive towards Ed. Qual. Diploma)</p></li>
-            <li><p>MBA (Inclusive towards Ed. Qual. Diploma) HNC/HND: High National Certificates (HNCs)</p></li>
+            <li><p>Pre- Masters</p></li>
+            <li><p>Masters </p></li>
+            <li><p>Blended Learning Masters</p></li>
         </ul>
     </div>
 
@@ -142,17 +293,23 @@
 @section Scripts {
     <script type="text/javascript">
         $(".service").click(function () {
-            debugger;
+            var content = $("#" + $(this).attr("data-modal-content-id")).html();
+            var title = $(this).attr("data-modal-content-title");
+
+            $(".modal-title").text(title);
+            $(".modal-body").html(content);
+
+            $('.modal').modal('show');
         });
     </script>
     
 }
 
-@helper Section(string id, string title, string fa)
+@helper Section(string id, string title, string fa, bool alt = false)
 {
     <!-- Service -->
     <div class="col-md-4 col-sm-6">
-        <div class="service" data-modal-content-id="@id">
+        <div class="service" data-modal-content-title="@title" data-modal-content-id="@id" style="cursor: pointer; @(alt ? "background-color: white; box-shadow: none;" : String.Empty)">
             <i class="fa @fa"></i>
             <div class="service-body">
                 <h3>@title</h3>

@@ -201,6 +201,8 @@
     <Content Include="icons\icon_google_circle_color.png" />
     <Content Include="icons\icon_rss_circle_color.png" />
     <Content Include="icons\icon_twitter_circle_color.png" />
+    <Content Include="images\animate\scrolldown.gif" />
+    <Content Include="images\animate\scrolldown2.gif" />
     <Content Include="images\appstore.png" />
     <Content Include="images\avatar\avatar_01.jpg" />
     <Content Include="images\avatar\avatar_02.jpg" />
@@ -208,6 +210,10 @@
     <Content Include="images\avatar\avatar_04.jpg" />
     <Content Include="images\bg1.jpg" />
     <Content Include="images\bg10.png" />
+    <Content Include="images\bg11.jpg" />
+    <Content Include="images\bg12.jpg" />
+    <Content Include="images\bg13.jpg" />
+    <Content Include="images\bg14.JPG" />
     <Content Include="images\bg2.jpg" />
     <Content Include="images\bg3.jpg" />
     <Content Include="images\bg4.jpg" />
@@ -241,24 +247,40 @@
     <Content Include="images\ico_map_white.png" />
     <Content Include="images\ico_sound_white.png" />
     <Content Include="images\logo.png" />
-    <Content Include="images\partners\partner_001.jpg" />
-    <Content Include="images\partners\partner_001_bw.jpg" />
-    <Content Include="images\partners\partner_002.jpg" />
-    <Content Include="images\partners\partner_002_bw.jpg" />
-    <Content Include="images\partners\partner_003.jpg" />
-    <Content Include="images\partners\partner_003_bw.jpg" />
-    <Content Include="images\partners\partner_004.jpg" />
-    <Content Include="images\partners\partner_004_bw.jpg" />
-    <Content Include="images\partners\partner_005.jpg" />
-    <Content Include="images\partners\partner_005_bw.jpg" />
+    <Content Include="images\partners\partner_001.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_001_bw.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_002.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_002_bw.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_003.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_003_bw.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_004.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_004_bw.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_005.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\partners\partner_005_bw.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="images\partners\partner_006.jpg" />
     <Content Include="images\partners\partner_006_bw.jpg" />
     <Content Include="images\partners\partner_007.jpg" />
     <Content Include="images\partners\partner_007_bw.jpg" />
-    <Content Include="images\partners\partner_008.jpg" />
-    <Content Include="images\partners\partner_008_bw.jpg" />
-    <Content Include="images\partners\partner_009.jpg" />
-    <Content Include="images\partners\partner_009_bw.jpg" />
     <Content Include="images\phone.png" />
     <Content Include="images\portfolio\image_01.jpg" />
     <Content Include="images\portfolio\image_02.jpg" />

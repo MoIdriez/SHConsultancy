@@ -1,0 +1,168 @@
+﻿@using SHConsultancy.Models
+@{ ViewBag.Title = "Courses"; }
+
+<div id="page-wrapper">
+    @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false })
+
+    <!-- ==========================
+        SERVICES - START
+    =========================== -->
+    <section class="content services2" id="services">
+        <div class="container">
+            <h2>EDUCATION</h2>
+            <div class="row">
+                @Section("ielts", "IELTS", "fa-sort-alpha-asc")
+                @Section("health", "Health and Social Care:", "fa-heartbeat")
+                @Section("hair", "Hair & Beauty Courses", "fa-scissors")
+                @Section("business", "Business Courses", "fa-black-tie")
+                @Section("gcse", "GCSE/IGCSE & A-Levels", "fa-calculator")
+                @Section("hnd", "Higher National Diplomas (HNDs)", "fa-hand-paper-o")
+                @Section("one", "One Year Bachelor’s Degree", "fa-pie-chart")
+                @Section("bachelor", "Bachelor Degree", "fa-graduation-cap")
+                @Section("master", "Master’s Degree", "fa-line-chart")
+            </div>
+        </div>
+    </section>
+    <!-- ==========================
+        SERVICES - END
+    =========================== -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Education</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="@("window.location.href='" + @Url.Action("Index", "ContactUs") + "'");" >Contact Us</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- IELTS-->
+    <div id="ielts" class="hidden">
+        <p>IELTS is a language-proficiency test for higher education, assessing core English skills such as:</p>
+        <ul>
+            <li>
+                <p>Reading</p>
+            </li>
+            <li>
+                <p>Writing</p>
+            </li>
+            <li>
+                <p>Listening</p>
+            </li>
+            <li>
+                <p>Speaking</p>
+            </li>
+        </ul>
+        <p>Our partnered IELTS programmes are internationally recognized by all institutions such as:</p>
+        <ul>
+            <li>
+                <p>Local and International Schools</p>
+            </li>
+            <li>
+                <p>Local and International Universities</p>
+            </li>
+            <li>
+                <p>Local and International Employers</p>
+            </li>
+            <li>
+                <p>Local and International Professional bodies</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- HAIR -->
+    <div id="health" class="hidden">
+        <p>If you are interested in medical or nursing programmes, you can arrange to have a discussion with us about your requirements and what programmes you can apply to</p>
+        <ul>
+            <li><p>NCFE CACHE level 1 diploma in induction to health, social care and children's and young people</p></li>
+            <li><p>NCFE CACHE level 1 Certificate in induction to health, social care and children's and young people</p></li>
+            <li><p>NCFE CACHE level 1 Award in induction to health, social care and children's and young people</p></li>
+            <li><p>NCFE CACHE Level 2 Certificate in Preparing to Work in Adult Social Care</p></li>
+            <li><p>NCFE CACHE Level 3 Certificate in Preparing to Work in Adult Social Care</p></li>
+        </ul>
+    </div>
+
+    <!-- HAIR -->
+    <div id="hair" class="hidden">
+        <p>If you are interested in pursuing a career in hair, makeup and beauty courses - we have partnered universities/colleges that can make your career goals come to life. Specializing in both beginner and advanced level courses, we can discuss what type of experience you have and where you can fit into your ideal programme. </p>
+    </div>
+
+    <!-- Business -->
+    <div id="business" class="hidden">
+        <p>Access BTEC Level 3 Diploma in Business Administration, discussing your level of work and educational experience, we will guide you through the application process, and assess how you can be a part of a prestigious business programme. </p>
+    </div>
+
+    <!-- GCSE/IGCSE & A-Levels -->
+    <div id="gcse" class="hidden">
+        <p>Our experts can advise you on different options available to you, where you can complete your GCSE and A- level within the UK, choosing over 10 core subjects over a period of two years. Our specialized team will highlight courses and locations across the UK where a prospective student can complete his or her studies. We will also assign a personal tutor to each student, who will offer counselling and general support services. Whether you wish to make a fulfilling and rewarding career, take your education to the next level or even set up your own business, you will be ready to succeed.</p>
+    </div>
+
+    <!-- Higher National Diplomas -->
+    <div id="hnd" class="hidden">
+        <p>Higher National Diplomas (HNDs) are work-related, vocational or involve higher education qualifications. They are Level-5 qualifications. HNCs and HNDs focus on “learning by doing” and give skills that you can use in any particular industry. They are highly valued by employers and can also count towards membership of professional bodies and other employer organisations. Both qualifications are provided by further and higher education colleges. After completing a HND, the student can then enter any of the universities in the UK and complete a Top-up year to achieve his BA.</p>
+    </div>
+
+    <!-- One Year Bachelor’s Degree -->
+    <div id="one" class="hidden">
+        <p>Transform your career with a Blended degree by ensuring you find the perfect programmes to start off your academic pursuits, we can discuss your options with our partnered universities about what programmes you are eligible for and what steps you need to complete your application. Regardless of your country, English-language proficiency and even interests, we can find the programme best suited to your needs. Our partners are attested worldwide. We can also provide you with the One-Year Programme to complete your BA, through the following courses available:</p>
+        <ul>
+            <li><p>BA (Hons) in Marketing (Top-up)</p></li>
+            <li><p>BA (Hons) in Business Management (Top-up)</p></li>
+            <li><p>BA (Hons) in Business Management (Inclusive of Edu. Qual Diploma)</p></li>
+            <li><p>BA (Hons) in Marketing (Inclusive of Edu. Qual. Diploma)</p></li>
+        </ul>
+    </div>
+
+    <!-- Bachelor Degree -->
+    <div id="bachelor" class="hidden">
+        <p>Undergraduate degrees in the UK are normally 3 or 4 years in length. 4 year courses usually add 1 year in another country studying languages or in a work placement in industry. A handful of courses which lead to professional qualified status such as Architecture, Dentistry, Medicine and Veterinary Medicine are longer in length. Our experts can help with the administration processes and steps that are needed in order for you to be able to select the university and course of your choice. Let us help you fulfil academic dream.</p>
+    </div>
+
+    <!-- Higher National Diplomas -->
+    <div id="master" class="hidden">
+        <p>Transform your career with a Blended MBA. Once you have completed your Bachelor’s Degree and have decided to continue your education, we can assist you on your search for your desired Master’s programme. After carefully examining your final grades, career choices and geographical location, we can assess what steps you can take for your next academic destination. Here are the following courses you can potentially be a part of:</p>
+        <ul>
+            <li><p>MA in Marketing and Innovation (Top-up)</p></li>
+            <li><p>MBA (Top-up)</p></li>
+            <li><p>MA in Marketing and Innovation (Inclusive towards Ed. Qual. Diploma)</p></li>
+            <li><p>MBA (Inclusive towards Ed. Qual. Diploma) HNC/HND: High National Certificates (HNCs)</p></li>
+        </ul>
+    </div>
+
+    @Html.Partial("_Footer")
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(".service").click(function () {
+            var content = $("#" + $(this).attr("data-modal-content-id")).html();
+            var title = $(this).attr("data-modal-content-title");
+
+            $(".modal-title").text(title);
+            $(".modal-body").html(content);
+
+            $('.modal').modal('show');
+        });
+    </script>
+    
+}
+
+@helper Section(string id, string title, string fa)
+{
+    <!-- Service -->
+    <div class="col-md-4 col-sm-6">
+        <div class="service" data-modal-content-title="@title" data-modal-content-id="@id" style="cursor:pointer">
+            <i class="fa @fa"></i>
+            <div class="service-body">
+                <h3>@title</h3>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,34 @@
+﻿@using SHConsultancy.Models
+@{ ViewBag.Title = "Property"; }
+
+<div id="page-wrapper">
+    @Html.Partial("_Header", new HeaderViewModel { IsDefault = true, IsFixed = false })
+
+    <!-- ==========================
+         JUMBOTRON - START
+     =========================== -->
+    <section class="jumbotron jumbotron5">
+        <div class="container"></div>
+    </section>
+    <!-- ==========================
+        JUMBOTRON - END
+    =========================== -->
+    <!-- ==========================
+        INTRODUCTION - START
+    =========================== -->
+    <section class="content" id="section-introduction">
+        <div class="container">
+            <h2>Accommodation</h2>
+            <p>Whether you are a student, potential home-owner or business owner, we can find the perfect property to fit your needs. Through a consultation session, we can discuss your budget, location preference and/or any other information you may need for us to consider. Regardless of your circumstance, we promise to deliver above and beyond to make your accommodation right for you. Accommodation options vary from homestays, on campus, international student housing, short term and Long term rentals. If you require assistance with relocation abroad or across the U.K, our experts are ready to assist. Our local knowledge will help us provide each client with a tailored solution to solve any housing queries. </p>
+            <p>For queries regarding Investment opportunities, our dedicated experts are here to advise you on commercial and residential properties.</p>
+            <p>If you are interested in learning more regarding our Accommodation, please <b><a href="@Url.Action("Index", "ContactUs")">contact us</a></b> for a free consultation today.</p>
+        </div>
+    </section>
+    <!-- ==========================
+        INTRODUCTION - END
+    =========================== -->
+
+    
+
+    @Html.Partial("_Footer")
+</div>

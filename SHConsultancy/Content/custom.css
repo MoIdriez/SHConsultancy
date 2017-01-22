@@ -888,15 +888,17 @@ header.navbar .navbar-brand {
 }
 
 header.navbar .navbar-brand img {
-    height:70px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 header.navbar .navbar-nav > li > a {
 	padding-bottom:25px;
     padding-top:25px;
     color:#777777;
-	font-weight:300;
+	font-weight:400;
 	font-family:'Roboto', sans-serif;
+    font-size: 15px;
 }
 
 header.navbar .navbar-nav > li > a > i {
@@ -1379,6 +1381,18 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 	background-size:cover;
 }
 
+    .jumbotron5.education {
+        background-image: url(../images/bg13.jpg);
+    }
+
+    .jumbotron5.services {
+        background-image: url(../images/bg14.jpg);
+    }
+
+    .jumbotron5.accomodation {
+        background-image: url(../images/acc/1.jpeg);
+    }
+
 /* JUMBOTRON 6 */
 
 .jumbotron6 #slide-1 {
@@ -1394,8 +1408,17 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 }
 
 .jumbotron6 #slide-3 {
+    background-position:right -270px;
+	background-color:rgba(0,0,0,0.1);
 	background-image:url(../images/bg5.jpg); 
-	background-position:left -200px;
+	position:relative;
+}
+
+.jumbotron6 #slide-4 {
+	background-position:right -270px;
+	background-color:rgba(0,0,0,0.1);
+	background-image:url(../images/bg6.jpg); 
+	position:relative;
 }
 
 .jumbotron6 #slide-1 img {
@@ -1403,7 +1426,7 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 }
 
 .jumbotron6 #slide-2 h2 {
-	background-color:transparent;
+	background-color:rgba(13,88,166,0.8)
 	font-size:80px;
 	text-transform: uppercase;
 	color:#FFFFFF;
@@ -1414,12 +1437,18 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 	line-height:90px;
 }
 
-.jumbotron6 #slide-2 h3 {
+/*.jumbotron6 #slide-2 h3 {
 	font-size:40px;
 	color:#FFFFFF;
 	font-weight:300;
 	margin:0 0 10px;
 	line-height:50px;
+}*/
+
+.jumbotron6 #slide-2 h3,
+.jumbotron5 h3 {
+	font-size:36px;
+	margin:0 0 30px;
 }
 
 .jumbotron6 #slide-3 h2,
@@ -1445,6 +1474,34 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 }
 
 .jumbotron6 #slide-3 .btn:first-child:hover,
+.jumbotron5 .btn:first-child:hover {
+	color:#FFFFFF;
+}
+
+
+.jumbotron6 #slide-4 h2,
+.jumbotron5 h2 {
+	font-size:60px;
+	line-height:70px;
+	padding:20px;
+	margin:100px 0 30px;
+}
+
+.jumbotron6 #slide-4 h3,
+.jumbotron5 h3 {
+	font-size:36px;
+	margin:0 0 30px;
+}
+
+.jumbotron6 #slide-4 .btn,
+.jumbotron5 .btn,
+.jumbotron3 .btn {
+	font-size:20px;
+	border-radius:0;
+	color:#FFFFFF;
+}
+
+.jumbotron6 #slide-4 .btn:first-child:hover,
 .jumbotron5 .btn:first-child:hover {
 	color:#FFFFFF;
 }
@@ -2050,9 +2107,8 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 }
 
 #section-partners #partners-slider .item img {
-	width:auto;
-	margin-left:auto;
-	margin-right:auto;
+	max-width:100%;
+    max-height:100%;
 }
 
 #partners-slider.owl-carousel .owl-stage-outer {
@@ -2136,7 +2192,7 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 /* STATISTICS */
 
 #section-statistics {
-	padding:70px 0 60px;
+	padding:30px 0 30px;
 }
 
 .statistic {
@@ -2146,13 +2202,13 @@ header.navbar-transparent.navbar-offset .navbar-nav > .open > a:focus {
 }
 
 .statistic .number {
-	font-size:60px;
+	font-size:20px;
 	font-weight:300;
 }
 
 .statistic .title {
 	text-transform:uppercase;
-	font-size:26px;
+	font-size:13px;
 	font-weight:bold;
 }
 
@@ -2679,6 +2735,13 @@ footer .navbar-nav > li > a:hover {
 	margin:0;
 }
 
+#services.services3 .service-extra { height: 420px;}
+#services.services3 .service-extra h3:first-of-type { height: 60px;}
+#services.services3 .service-extra p:first-of-type { height: 60px;}
+#services.services3 .service-extra ul:first-of-type { margin-top: 15px;}
+
+#services.services3 .service-extra2 { min-height: 280px;}
+#services.services3 .service-extra2 h3:first-of-type { height: 60px;}
 /* SERVICES 1 */
 
 .services1 {
@@ -4678,14 +4741,14 @@ form.event-register .form-control {
 }
 
 .jumbotron-full-height #slide-2 h2 {
-	font-size:80px;
+	font-size:50px;
 	line-height:normal;
 	padding:20px 30px;
 	margin:250px 0 50px;
 }
 
 .jumbotron-full-height #slide-2 h3 {
-	font-size:50px;
+	font-size:30px;
 	line-height:normal;
 	padding:20px 30px;
 	margin-bottom:20px;

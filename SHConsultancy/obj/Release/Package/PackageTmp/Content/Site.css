@@ -1,24 +1,25 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿#section-statistics .row > div {
+    margin-top: 20px;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.content.custom-seperator2 {
+    background-image: url(../images/bg12.jpg);
+    min-height: 150px;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.content.custom-seperator {
+    background-image: url(../images/bg11.jpg);
+    min-height: 150px;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -ms-background-size: cover;
+    background-size: cover;
 }
