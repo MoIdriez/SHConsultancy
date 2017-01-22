@@ -201,6 +201,12 @@
     <Content Include="icons\icon_google_circle_color.png" />
     <Content Include="icons\icon_rss_circle_color.png" />
     <Content Include="icons\icon_twitter_circle_color.png" />
+    <Content Include="images\acc\1.jpeg" />
+    <Content Include="images\acc\2.jpg" />
+    <Content Include="images\acc\3.jpg" />
+    <Content Include="images\acc\4.jpg" />
+    <Content Include="images\acc\5.jpg" />
+    <Content Include="images\acc\6.jpg" />
     <Content Include="images\animate\scrolldown.gif" />
     <Content Include="images\animate\scrolldown2.gif" />
     <Content Include="images\appstore.png" />
